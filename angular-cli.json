@@ -18,9 +18,20 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
+        "../node_modules/jquery-ui-dist/jquery-ui.min.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.css",
+        "./assets/bootstrap-datetimepicker.min.css",
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/moment/min/moment.min.js",
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/jquery-ui-dist/jquery-ui.min.js",
+        "../node_modules/bootstrap/js/transition.js",
+        "../node_modules/bootstrap/js/collapse.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "./assets/bootstrap-datetimepicker.min.js"
+        ],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",

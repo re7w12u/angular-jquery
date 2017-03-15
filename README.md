@@ -1,31 +1,41 @@
 # Ng2BootstrapDatepicker
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
+Simple app used to check how to embed jquery within an angular app. I know that's not best practice but still it could be useful in some cases, especially for plugins.
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+Here is how I've proceed :
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+>npm install --save moment
+>npm install --save bootstrap
+>npm install --save jquery-ui-dist
+>npm install --save jquery
 
-## Build
+copy bootstrap-datetimepicker.min.js|css to assets folder
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+modify the angular-cli.json to include those files :
 
-## Running unit tests
+      "styles": [
+        "../node_modules/jquery-ui-dist/jquery-ui.min.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.css",
+        "./assets/bootstrap-datetimepicker.min.css",
+        "styles.css"
+      ],
+      "scripts": [
+        "../node_modules/moment/min/moment.min.js",
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/jquery-ui-dist/jquery-ui.min.js",
+        "../node_modules/bootstrap/js/transition.js",
+        "../node_modules/bootstrap/js/collapse.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "./assets/bootstrap-datetimepicker.min.js"
+        ],
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+create new components
 
-## Running end-to-end tests
+declare a variable to mock jquery : 
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+declare var jQuery:any;
 
-## Deploying to Github Pages
+I've created 2  components for the date picker to show different possibilities on how to use jquery
 
-Run `ng github-pages:deploy` to deploy to Github Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Thrid component use the draggable feature

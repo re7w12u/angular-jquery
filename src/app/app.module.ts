@@ -4,10 +4,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { NgDatepickerComponent } from './ng-datepicker/ng-datepicker.component';
+import { NgDatepicker2Component } from './ng-datepicker2/ng-datepicker2.component';
+import { NgDragmeComponent } from './ng-dragme/ng-dragme.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NgDatepickerComponent,
+    NgDatepicker2Component,
+    NgDragmeComponent    
   ],
   imports: [
     BrowserModule,
