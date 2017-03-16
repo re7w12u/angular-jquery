@@ -8,17 +8,20 @@ import { NgDatepickerComponent } from './ng-datepicker/ng-datepicker.component';
 import { NgDatepicker2Component } from './ng-datepicker2/ng-datepicker2.component';
 import { NgDragmeComponent } from './ng-dragme/ng-dragme.component';
 
+import { DatePickerModule } from 'ng2-datepicker';
+
 @NgModule({
   declarations: [
     AppComponent,
     NgDatepickerComponent,
     NgDatepicker2Component,
-    NgDragmeComponent    
+    NgDragmeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    DatePickerModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
