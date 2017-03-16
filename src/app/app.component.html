@@ -2,9 +2,52 @@
   {{title}}
 </h1>
 
+<div class="container">
 
-<ng2-datepicker [options]="options" [(ngModel)]="date"></ng2-datepicker>
+  <div class="panel panel-default">
+      <div class="panel-heading">Example illustrating parent <=> child communication</div>
+      <div class="panel-body">
+        <app-parent-comp></app-parent-comp>
+      </div>
+  </div>
 
-<app-ng-datepicker></app-ng-datepicker>
-<app-ng-datepicker2></app-ng-datepicker2>
-<app-ng-dragme></app-ng-dragme>
+  <div class="panel panel-default">
+    <div class="panel-heading">First Example using external component</div>
+      <div class="panel-body">
+        <p><a href="https://www.npmjs.com/package/ng2-datepicker">https://www.npmjs.com/package/ng2-datepicker</a></p>
+        <ng2-datepicker [options]="options" [(ngModel)]="date"></ng2-datepicker>
+    </div>
+  </div>
+
+
+  <div class="panel panel-default">
+    <div class="panel-heading">Second Example with custom module</div>
+      <div class="panel-body">
+        <p>it is based on jquery and bootstrap</p>
+        <div class="form-group">
+          <app-ng-datepicker ></app-ng-datepicker>
+          <label for="date1TextBox">output : </label>&nbsp;<input type="text" [ngModel]="date1" name="date1TextBox"/>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="panel panel-default">
+    <div class="panel-heading">Thrid Example with custom module</div>
+      <div class="panel-body">
+        <p>it is based on jquery and bootstrap too</p>
+          <app-ng-datepicker2></app-ng-datepicker2 >
+          <label for="date1TextBox">output : </label>&nbsp;<input type="text" [ngModel]="date1" name="date2TextBox"/>
+    </div>
+  </div>
+
+
+  <div class="panel panel-default">
+    <div class="panel-heading">Fourth Example showing how to use jquery plugins</div>
+      <div class="panel-body">
+        <app-ng-dragme></app-ng-dragme>
+      </div>
+  </div>
+
+
+</div>

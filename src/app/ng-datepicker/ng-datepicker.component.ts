@@ -1,5 +1,5 @@
 
-import { Component, OnInit,ViewChild, ElementRef, AfterViewInit } from '@angular/core';
+import { Component, OnInit,ViewChild, ElementRef, AfterViewInit, Output, EventEmitter } from '@angular/core';
 
 declare var $:any;
 
@@ -10,7 +10,8 @@ declare var $:any;
 })
 export class NgDatepickerComponent implements OnInit, AfterViewInit {
  @ViewChild('datetimepicker1') el:ElementRef;
-
+ @Output() selectedDate: EventEmitter<Date> = new EventEmitter<Date>();
+ date:Date;
 
   constructor() { }
 
@@ -19,6 +20,10 @@ export class NgDatepickerComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     $("#datetimepicker1").datetimepicker();
+  }
+
+  SaveDate($event){
+    console.log("got a date !!");
   }
 
 

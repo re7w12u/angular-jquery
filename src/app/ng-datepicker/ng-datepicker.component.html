@@ -6,11 +6,12 @@
         <div class='col-sm-6'>
             <div class="form-group">
                 <div class='input-group date' id='datetimepicker1' #datetimepicker1>
-                    <input type='text' class="form-control" />
+                    <input type='text' class="form-control" [(ngModel)]="date" />
                     <span class="input-group-addon">
                         <span class="glyphicon glyphicon-calendar"></span>
                     </span>
                 </div>
+                <span>{{date}}</span>
             </div>
         </div>
     </div>

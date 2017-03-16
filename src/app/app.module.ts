@@ -9,13 +9,17 @@ import { NgDatepicker2Component } from './ng-datepicker2/ng-datepicker2.componen
 import { NgDragmeComponent } from './ng-dragme/ng-dragme.component';
 
 import { DatePickerModule } from 'ng2-datepicker';
+import { ParentCompComponent } from './parent-comp/parent-comp.component';
+import { ChildCompComponent } from './child-comp/child-comp.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NgDatepickerComponent,
     NgDatepicker2Component,
-    NgDragmeComponent
+    NgDragmeComponent,
+    ParentCompComponent,
+    ChildCompComponent
   ],
   imports: [
     BrowserModule,
