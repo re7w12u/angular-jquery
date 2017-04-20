@@ -5,8 +5,8 @@
     <div class="row">
         <div class='col-sm-6'>
             <div class="form-group">
-                <input #inputdate type='text' [ngModel]="date" id="date" name="date" />                    
-                <div>{{date}}</div>               
+                <input #inputdate type='text' [ngModel]="date | dateformat" id="date" name="date" />                    
+                <div>{{date | dateformat}}</div>               
             </div>
         </div>
     </div>
