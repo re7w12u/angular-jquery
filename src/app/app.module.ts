@@ -12,6 +12,7 @@ import { DatePickerModule } from 'ng2-datepicker';
 import { ParentCompComponent } from './parent-comp/parent-comp.component';
 import { ChildCompComponent } from './child-comp/child-comp.component';
 import { NgDatepicker3Component } from './ng-datepicker3/ng-datepicker3.component';
+import { NgDatepicker4Component } from './ng-datepicker4/ng-datepicker4.component';
 
 //import {} from 'n'
 
@@ -23,7 +24,8 @@ import { NgDatepicker3Component } from './ng-datepicker3/ng-datepicker3.componen
     NgDragmeComponent,
     ParentCompComponent,
     ChildCompComponent,
-    NgDatepicker3Component
+    NgDatepicker3Component,
+    NgDatepicker4Component
   ],
   imports: [
     BrowserModule,

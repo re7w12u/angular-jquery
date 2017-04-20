@@ -6,7 +6,7 @@
         <div class='col-sm-6'>
             <div class="form-group">
                 <div class='input-group date' id='datetimepicker4' #datetimepicker1>
-                    <input type='text' class="form-control" [(ngModel)]="date" id="date" name="date" />
+                    <input type='text' class="form-control" [ngModel]="date" (onModelChange)="SaveDate($event)" id="date" name="date" />
                     <span class="input-group-addon">
                         <span class="glyphicon glyphicon-calendar"></span>
                     </span>

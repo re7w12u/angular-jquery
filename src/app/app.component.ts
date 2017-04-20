@@ -11,7 +11,7 @@ export class AppComponent {
 
   date: DateModel;
   options: DatePickerOptions;
-  date1: Date;
+  date1: Date = new Date(1976,2,17);
  
   constructor() {
     this.options = new DatePickerOptions();
